@@ -2,6 +2,8 @@
 Daily update on what I've learned on AI 
 
 ### Final goal : Build a tumor detector by [2026]
+#### Resources: 
+1. [Coursera ] [ Deep Learning Specialization on Coursera](https://coursera.org/learn/neural-networks-deep-learning)   
 ## Day 1 Update  
 - Learned about [intro ,how neural networks work ].  
 
@@ -12,9 +14,6 @@ Daily update on what I've learned on AI
 Y = 1 / ( 1 + e^-z) 
 ```
 
-
-- **Resources**: [Coursera ].  
-[🎓 Deep Learning Specialization on Coursera](https://coursera.org/learn/neural-networks-deep-learning)   
 
 ## Day 3 update
 - Learned about [ Gradient descending]
