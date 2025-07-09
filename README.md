@@ -23,3 +23,6 @@ Repeat {
     b := b - alpha (d J(w,b)) / db
        }
 ```
+## Day 4 update
+- Learned about [ computational graph] 
+Flex : I learned a code 
