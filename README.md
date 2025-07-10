@@ -25,4 +25,14 @@ Repeat {
 ```
 ## Day 4 update
 - Learned about [ computational graph] 
-Flex : I learned a code 
+Why deep learning think the way it think? 
+
+## Day 5 update 
+- Learned about Vectorization
+How to get rid of For loop
+Fantastic way to make the algorithms run faster
+
+```
+Example
+Y = np. dot (a.b)
+```
