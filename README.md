@@ -25,12 +25,12 @@ Repeat {
 ```
 ## Day 4 update
 - Learned about [ computational graph] 
-. Why deep learning think the way it think? 
+- Why deep learning think the way it think? 
 
 ## Day 5 update 
 - Learned about Vectorization
-. How to get rid of For loop
-. Fantastic way to make the algorithms run faster
+- How to get rid of For loop
+- Fantastic way to make the algorithms run faster
 
 ```
 Example
