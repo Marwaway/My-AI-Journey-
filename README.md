@@ -36,3 +36,6 @@ Repeat {
 Example
 Y = np. dot (a.b)
 ```
+
+## Day 6 update
+- learn about broadcasting in python, a way to reshape the mismatch dimensions matrix to perform a function on them at no time 
