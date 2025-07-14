@@ -42,6 +42,7 @@ Y = np. dot (a.b)
 
 ## Day 7,8 update
 - learn how to use Google colab and wrote my first two code! 
+https://github.com/Marwaway/My-AI-Journey-/blob/main/MRI%20preprocessing%2C%20multiple%20intensity%20normalization%20.ipynb
 ### Key Points about the multiple normalization code:
 - Purpose: 
 The code simulates MRI scan data and normalizes each scan to a standard range [0, 1] to prepare it for further processing (e.g., machine learning or visualization).
