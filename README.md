@@ -38,4 +38,14 @@ Y = np. dot (a.b)
 ```
 
 ## Day 6 update
-- learn about broadcasting in python, a way to reshape the mismatch dimensions matrix to perform a function on them at no time 
+- learn about broadcasting in python, a way to reshape the mismatch dimensions matrix to perform a function on them at no time
+
+## Day 7,8 update
+- learn how to use Google colab and wrote my first two code! 
+### Key Points about the multiple normalization code:
+- Purpose: 
+The code simulates MRI scan data and normalizes each scan to a standard range [0, 1] to prepare it for further processing (e.g., machine learning or visualization).
+- Efficiency: 
+Uses NumPy's vectorized operations to avoid slow Python loops.
+- Per-Scan Normalization: 
+Each scan is normalized independently, preserving relative intensity distributions within a scan but not across scans.
