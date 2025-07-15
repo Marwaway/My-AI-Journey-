@@ -53,3 +53,7 @@ The code simulates MRI scan data and normalizes each scan to a standard range [0
 Uses NumPy's vectorized operations to avoid slow Python loops.
 - Per-Scan Normalization: 
 Each scan is normalized independently, preserving relative intensity distributions within a scan but not across scans.
+
+##Day 9 update
+- make a diabetes prediction code, need a lot if work to improve and make it more like NN
+https://github.com/Marwaway/My-AI-Journey-/blob/main/Diabetes%20risk%20interactive%20prediction%20
