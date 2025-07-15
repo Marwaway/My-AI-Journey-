@@ -1,0 +1,168 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPvbm+j+DT3kNGNXC25uBeY",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Marwaway/My-AI-Journey-/blob/main/Diabetes%20risk%20interactive%20prediction%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 58,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 978
+        },
+        "id": "JXk87bdfAP8l",
+        "outputId": "2d7a76e6-3ebb-43e6-e85a-2beec6748986"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "Enter patient details:\n",
+            "BMI (18-40): 35.4\n",
+            "Glucose (70-300 mg/dL): 90\n",
+            "Age (20-80): 26\n",
+            "\n",
+            "Prediction: LOW RISK (11.1% probability)\n",
+            "\n",
+            "Check another patient? (y/n): Y\n",
+            "\n",
+            "Enter patient details:\n",
+            "BMI (18-40): 24.8\n",
+            "Glucose (70-300 mg/dL): 300\n",
+            "Age (20-80): 60\n",
+            "\n",
+            "Prediction: HIGH RISK (52.1% probability)\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "KeyboardInterrupt",
+          "evalue": "Interrupted by user",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-58-53452506.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m     84\u001b[0m     \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34mf\"\\nPrediction: {risk} ({probability[0,0]*100:.1f}% probability)\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     85\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 86\u001b[0;31m     \u001b[0;32mif\u001b[0m \u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"\\nCheck another patient? (y/n): \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlower\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m!=\u001b[0m \u001b[0;34m'y'\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     87\u001b[0m         \u001b[0;32mbreak\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.11/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36mraw_input\u001b[0;34m(self, prompt)\u001b[0m\n\u001b[1;32m   1175\u001b[0m                 \u001b[0;34m\"raw_input was called, but this frontend does not support input requests.\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1176\u001b[0m             )\n\u001b[0;32m-> 1177\u001b[0;31m         return self._input_request(\n\u001b[0m\u001b[1;32m   1178\u001b[0m             \u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mprompt\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1179\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_ident\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"shell\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.11/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36m_input_request\u001b[0;34m(self, prompt, ident, parent, password)\u001b[0m\n\u001b[1;32m   1217\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1218\u001b[0m                 \u001b[0;31m# re-raise KeyboardInterrupt, to truncate traceback\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1219\u001b[0;31m                 \u001b[0;32mraise\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Interrupted by user\"\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1220\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mException\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1221\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlog\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mwarning\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Invalid Message:\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mexc_info\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m: Interrupted by user"
+          ]
+        }
+      ],
+      "source": [
+        "import numpy as np\n",
+        "\n",
+        "# 1. Data Preparation (Vectorized)\n",
+        "def generate_patients(num_samples=1000):\n",
+        "    \"\"\"Generate synthetic patient data with realistic patterns\"\"\"\n",
+        "    np.random.seed(42)\n",
+        "    BMI = np.random.normal(27, 5, num_samples)  # Average BMI 27±5\n",
+        "    Glucose = np.random.normal(130, 50, num_samples)  # Avg glucose 130±50\n",
+        "    Age = np.random.normal(45, 15, num_samples)  # Avg age 45±15\n",
+        "\n",
+        "    # Synthetic risk rules: High if (Glucose > 140) AND (BMI > 25 OR Age > 50)\n",
+        "    risk = ((Glucose > 140) & ((BMI > 25) | (Age > 50))).astype(int)\n",
+        "\n",
+        "    # Stack features (3 x num_samples)\n",
+        "    X = np.vstack([BMI, Glucose, Age])\n",
+        "    # Reshape labels (1 x num_samples)\n",
+        "    y = risk.reshape(1, -1)\n",
+        "\n",
+        "    return X, y\n",
+        "\n",
+        "# 2. Neural Network (Fully Vectorized)\n",
+        "class DiabetesRiskPredictor:\n",
+        "    def __init__(self):\n",
+        "        # Initialize weights with proper scaling\n",
+        "        self.W1 = np.random.randn(4, 3) * 0.01  # Hidden layer (4 neurons)\n",
+        "        self.b1 = np.zeros((4, 1))\n",
+        "        self.W2 = np.random.randn(1, 4) * 0.01   # Output neuron\n",
+        "        self.b2 = np.zeros((1, 1))\n",
+        "\n",
+        "    def sigmoid(self, z):\n",
+        "        return 1 / (1 + np.exp(-z))\n",
+        "\n",
+        "    def forward(self, X):\n",
+        "        \"\"\"Vectorized forward pass\"\"\"\n",
+        "        Z1 = np.dot(self.W1, X) + self.b1\n",
+        "        A1 = np.tanh(Z1)  # Using tanh for better learning\n",
+        "        Z2 = np.dot(self.W2, A1) + self.b2\n",
+        "        A2 = self.sigmoid(Z2)\n",
+        "        return A2, (Z1, A1, Z2, A2)\n",
+        "\n",
+        "    def train(self, X, y, epochs=1000, lr=0.01):\n",
+        "        \"\"\"Vectorized training with backpropagation\"\"\"\n",
+        "        for _ in range(epochs):\n",
+        "            # Forward pass\n",
+        "            A2, cache = self.forward(X)\n",
+        "            Z1, A1, Z2, _ = cache\n",
+        "\n",
+        "            # Backpropagation (vectorized)\n",
+        "            dZ2 = A2 - y\n",
+        "            dW2 = np.dot(dZ2, A1.T) / X.shape[1]\n",
+        "            db2 = np.sum(dZ2, axis=1, keepdims=True) / X.shape[1]\n",
+        "            dZ1 = np.dot(self.W2.T, dZ2) * (1 - np.power(A1, 2))\n",
+        "            dW1 = np.dot(dZ1, X.T) / X.shape[1]\n",
+        "            db1 = np.sum(dZ1, axis=1, keepdims=True) / X.shape[1]\n",
+        "\n",
+        "            # Update weights\n",
+        "            self.W2 -= lr * dW2\n",
+        "            self.b2 -= lr * db2\n",
+        "            self.W1 -= lr * dW1\n",
+        "            self.b1 -= lr * db1\n",
+        "\n",
+        "    def predict(self, X):\n",
+        "        \"\"\"Vectorized prediction\"\"\"\n",
+        "        prob, _ = self.forward(X)\n",
+        "        return (prob > 0.5).astype(int), prob\n",
+        "\n",
+        "# 3. Train the model\n",
+        "X_train, y_train = generate_patients(1000)\n",
+        "model = DiabetesRiskPredictor()\n",
+        "model.train(X_train, y_train)\n",
+        "\n",
+        "# 4. Interactive Prediction\n",
+        "def get_patient_input():\n",
+        "    print(\"\\nEnter patient details:\")\n",
+        "    BMI = float(input(\"BMI (18-40): \"))\n",
+        "    Glucose = float(input(\"Glucose (70-300 mg/dL): \"))\n",
+        "    Age = float(input(\"Age (20-80): \"))\n",
+        "    return np.array([[BMI], [Glucose], [Age]])\n",
+        "\n",
+        "while True:\n",
+        "    patient_data = get_patient_input()\n",
+        "    prediction, probability = model.predict(patient_data)\n",
+        "    risk = \"HIGH RISK\" if prediction[0,0] else \"LOW RISK\"\n",
+        "    print(f\"\\nPrediction: {risk} ({probability[0,0]*100:.1f}% probability)\")\n",
+        "\n",
+        "    if input(\"\\nCheck another patient? (y/n): \").lower() != 'y':\n",
+        "        break"
+      ]
+    }
+  ]
+}
