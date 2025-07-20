@@ -57,3 +57,9 @@ Each scan is normalized independently, preserving relative intensity distributio
 ## Day 9 update
 - make a diabetes prediction code, need a lot of work to improve and make it more like NN
 https://github.com/Marwaway/My-AI-Journey-/blob/main/Diabetes%20risk%20interactive%20prediction%20
+
+## Day 10 to Day 30
+- rewind to the basics and reading python crash course book
+- making code down the road:
+1. MRI pixel analyzer using python list
+https://github.com/Marwaway/My-AI-Journey-/blob/main/MRI%20pixel%20analyzer%20using%20python%20list%20.ipynb
