@@ -67,3 +67,4 @@ https://github.com/Marwaway/My-AI-Journey-/blob/main/Diabetes%20risk%20interacti
 https://github.com/Marwaway/My-AI-Journey-/blob/main/MRI%20pixel%20analyzer%20using%20python%20list%20.ipynb
 
 2. Highlighting high intensity pixels in MRI
+https://github.com/Marwaway/My-AI-Journey-/blob/main/Highlight%20high%20intensity%20pixels%20in%20mRI.ipynb
