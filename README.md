@@ -4,6 +4,8 @@ Daily update on what I've learned on AI
 ### Final goal : Build a tumor detector by [2026]
 #### Resources: 
 1. [Coursera ] [ Deep Learning Specialization on Coursera](https://coursera.org/learn/neural-networks-deep-learning)   
+2. Python crash course book
+
 ## Day 1 Update  
 - Learned about [intro ,how neural networks work ].  
 
@@ -60,6 +62,8 @@ https://github.com/Marwaway/My-AI-Journey-/blob/main/Diabetes%20risk%20interacti
 
 ## Day 10 to Day 30
 - rewind to the basics and reading python crash course book
-- making code down the road:
+- making codes down the road:
 1. MRI pixel analyzer using python list
 https://github.com/Marwaway/My-AI-Journey-/blob/main/MRI%20pixel%20analyzer%20using%20python%20list%20.ipynb
+
+2. Highlighting high intensity pixels in MRI
